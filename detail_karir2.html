@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Detail - Karir</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Lowongan Back End Developer PT. Tulungagung Jaya">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+    <link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="styles/courses_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/courses_responsive.css">
+    <style>
+        .job-header {
+            background: linear-gradient(135deg, #2d3e50 0%, #3498db 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px 10px 0 0;
+        }
+        .job-body {
+            padding: 30px;
+            border: 1px solid #e9ecef;
+            border-top: none;
+            border-radius: 0 0 10px 10px;
+        }
+        .job-title {
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        .company-name {
+            font-weight: 300;
+            font-size: 1.5rem;
+        }
+        .job-meta {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .meta-item {
+            margin-bottom: 8px;
+        }
+        .section-title {
+            color: #343a40;
+            font-weight: 600;
+            margin: 25px 0 15px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        .section-title:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: #3498db;
+        }
+        .responsibility-item, .requirement-item {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .responsibility-item:before, .requirement-item:before {
+            content: "\f058";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            color: #3498db;
+            position: absolute;
+            left: 0;
+        }
+        .tech-badge {
+            margin-right: 8px;
+            margin-bottom: 8px;
+            padding: 8px 15px;
+            background-color: #e9ecef;
+            color: #1976d2;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .apply-btn {
+            background-color: #3498db;
+            padding: 12px 30px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-top: 20px;
+            border: none;
+        }
+        .job-sidebar {
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            height: 100%;
+        }
+        .sidebar-title {
+            color: #2d3e50;
+            font-weight: 600;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .company-logo {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+        .tech-icon {
+            font-size: 1.5rem;
+            margin-right: 10px;
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+
+<div class="super_container">
+
+    <!-- Header -->
+    <header class="header d-flex flex-row">
+        <div class="header_content d-flex flex-row align-items-center">
+            <!-- Logo -->
+            <div class="logo_container">
+                <div class="logo">
+                    <img src="images/logo.png" class="logo_img" alt="">
+                    <span>PMKM</span>
+                </div>
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="main_nav_container">
+                <div class="main_nav">
+                    <ul class="main_nav_list">
+                        <li class="main_nav_item"><a href="index.html">home</a></li>
+                        <li class="main_nav_item"><a href="magang.html">magang</a></li>
+                        <li class="main_nav_item"><a href="karir.html">karir</a></li>
+                        <li class="main_nav_item"><a href="daftar.html">Daftar</a></li>
+                        <li class="main_nav_item"><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="header_side d-flex flex-row justify-content-center align-items-center">
+            <img src="images/phone-call.svg" alt="">
+            <span>+62 8521 3687 107</span>
+        </div>
+
+        <!-- Hamburger -->
+        <div class="hamburger_container">
+            <i class="fas fa-bars trans_200"></i>
+        </div>
+    </header>
+    
+    <!-- Menu -->
+    <div class="menu_container menu_mm">
+        <!-- Menu Close Button -->
+        <div class="menu_close_container">
+            <div class="menu_close"></div>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="menu_inner menu_mm">
+            <div class="menu menu_mm">
+                <ul class="menu_list menu_mm">
+                    <li class="menu_item menu_mm"><a href="index.html">Home</a></li>
+                    <li class="menu_item menu_mm"><a href="magang.html">Magang</a></li>
+                    <li class="menu_item menu_mm"><a href="karir.html">Karir</a></li>
+                    <li class="menu_item menu_mm"><a href="daftar.html">Dafar</a></li>
+                    <li class="menu_item menu_mm"><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <!-- Menu Social -->
+                <div class="menu_social_container menu_mm">
+                    <ul class="menu_social menu_mm">
+                        <li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                        <li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="menu_copyright menu_mm">Colorlib All rights reserved</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Home -->
+    <div class="home">
+        <div class="home_background_container prlx_parent">
+            <div class="home_background prlx" style="background-image:url(images/courses_background.jpg)"></div>
+        </div>
+        <div class="home_content">
+            <h1>Back End Developer</h1>
+        </div>
+    </div>
+
+    <!-- Job Details -->
+    <div class="popular page_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section_title text-center">
+                        <h1>Lowongan Kerja</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="job-card mb-5">
+                        <div class="job-header">
+                            <h1 class="job-title">Back End Developer</h1>
+                            <h3 class="company-name">PT. Tulungagung Jaya</h3>
+                        </div>
+                        <div class="job-body">
+                            <div class="job-meta">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="meta-item">
+                                            <strong><i class="fas fa-briefcase mr-2"></i>Jenis:</strong> Full-time
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="meta-item">
+                                            <strong><i class="fas fa-map-marker-alt mr-2"></i>Lokasi:</strong> Tulungagung, Jawa Timur
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="meta-item">
+                                            <strong><i class="fas fa-money-bill-wave mr-2"></i>Gaji:</strong> Rp9-15 juta
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-4">
+                                        <div class="meta-item">
+                                            <strong><i class="fas fa-clock mr-2"></i>Pengalaman:</strong> Min. 2 tahun
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="meta-item">
+                                            <strong><i class="fas fa-graduation-cap mr-2"></i>Pendidikan:</strong> S1/D4 Ilmu Komputer
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="meta-item">
+                                            <strong><i class="fas fa-calendar-alt mr-2"></i>Posting:</strong> 20 Juni 2024
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="section-title">Deskripsi Pekerjaan</h3>
+                            <p>Kami mencari Back End Developer berpengalaman untuk bergabung dengan tim teknologi PT. Tulungagung Jaya. Anda akan bertanggung jawab untuk mengembangkan, memelihara, dan mengoptimalkan sistem back end untuk aplikasi bisnis utama perusahaan.</p>
+
+                            <h3 class="section-title">Tanggung Jawab Utama</h3>
+                            <ul class="list-unstyled">
+                                <li class="responsibility-item">Mengembangkan dan memelihara RESTful API menggunakan Node.js</li>
+                                <li class="responsibility-item">Mendesain dan mengoptimalkan database PostgreSQL</li>
+                                <li class="responsibility-item">Menerapkan sistem autentikasi dan otorisasi yang aman</li>
+                                <li class="responsibility-item">Mengintegrasikan dengan layanan third-party dan microservices</li>
+                                <li class="responsibility-item">Menulis kode yang bersih, efisien, dan terdokumentasi</li>
+                                <li class="responsibility-item">Melakukan optimasi performa dan scaling aplikasi</li>
+                                <li class="responsibility-item">Bekerja sama dengan tim front end untuk integrasi API</li>
+                                <li class="responsibility-item">Menerapkan praktik keamanan data dan privasi</li>
+                            </ul>
+
+                            <h3 class="section-title">Kualifikasi Teknis</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Wajib:</h5>
+                                    <ul class="list-unstyled">
+                                        <li class="requirement-item">Pengalaman 2+ tahun dengan Node.js</li>
+                                        <li class="requirement-item">Mahir dalam JavaScript/TypeScript</li>
+                                        <li class="requirement-item">Pengalaman dengan PostgreSQL/MongoDB</li>
+                                        <li class="requirement-item">Memahami konsep RESTful API dan GraphQL</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Dianjurkan:</h5>
+                                    <ul class="list-unstyled">
+                                        <li class="requirement-item">Pengalaman dengan Docker dan Kubernetes</li>
+                                        <li class="requirement-item">Pengetahuan tentang sistem terdistribusi</li>
+                                        <li class="requirement-item">Familiar dengan cloud platform (AWS/GCP)</li>
+                                        <li class="requirement-item">Pengalaman dengan sistem message queue (RabbitMQ/Kafka)</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h3 class="section-title">Tech Stack</h3>
+                            <div class="row mb-4">
+                                <div class="col-md-3 col-6 text-center mb-3">
+                                    <i class="fab fa-node-js tech-icon"></i>
+                                    <p>Node.js</p>
+                                </div>
+                                <div class="col-md-3 col-6 text-center mb-3">
+                                    <i class="fas fa-database tech-icon"></i>
+                                    <p>PostgreSQL</p>
+                                </div>
+                                <div class="col-md-3 col-6 text-center mb-3">
+                                    <i class="fab fa-docker tech-icon"></i>
+                                    <p>Docker</p>
+                                </div>
+                                <div class="col-md-3 col-6 text-center mb-3">
+                                    <i class="fas fa-cloud tech-icon"></i>
+                                    <p>AWS</p>
+                                </div>
+                            </div>
+
+                            <h3 class="section-title">Benefit</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li class="requirement-item"><i class="fas fa-check-circle text-success mr-2"></i> Gaji kompetitif + bonus tahunan</li>
+                                        <li class="requirement-item"><i class="fas fa-check-circle text-success mr-2"></i> Asuransi kesehatan premium</li>
+                                        <li class="requirement-item"><i class="fas fa-check-circle text-success mr-2"></i> Program pelatihan reguler</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li class="requirement-item"><i class="fas fa-check-circle text-success mr-2"></i> Fleksibilitas kerja remote</li>
+                                        <li class="requirement-item"><i class="fas fa-check-circle text-success mr-2"></i> Lingkungan kerja kolaboratif</li>
+                                        <li class="requirement-item"><i class="fas fa-check-circle text-success mr-2"></i> Peralatan kerja modern</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h3 class="section-title">Proses Rekrutmen</h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-icon bg-primary text-white">
+                                        1
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h5>Seleksi Administrasi</h5>
+                                        <p>Penilaian CV dan portofolio</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-icon bg-primary text-white">
+                                        2
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h5>Technical Test</h5>
+                                        <p>Online coding test (Node.js + SQL)</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-icon bg-primary text-white">
+                                        3
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h5>Technical Interview</h5>
+                                        <p>Wawancara dengan tim engineering</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-icon bg-primary text-white">
+                                        4
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h5>Final Interview</h5>
+                                        <p>Wawancara dengan manajemen</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-center mt-5">
+                                <a href="daftar.html" class="btn btn-primary apply-btn">LAMAR SEKARANG</a>
+                                <p class="mt-2">Batas akhir lamaran: 10 Juli 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="job-sidebar">
+                        <div class="text-center">
+                            <img src="images/logo.png" alt="PT. Tulungagung Jaya" class="company-logo">
+                        </div>
+                        <h4 class="sidebar-title">Tentang Perusahaan</h4>
+                        <p>PT. Tulungagung Jaya adalah perusahaan teknologi yang berfokus pada pengembangan solusi perangkat lunak untuk industri manufaktur dan logistik di Jawa Timur. Kami telah melayani lebih dari 50 klien korporat sejak 2010.</p>
+                        
+                        <h4 class="sidebar-title mt-4">Budaya Perusahaan</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> Inovasi dan kreativitas</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> Kolaborasi tim</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> Pembelajaran berkelanjutan</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> Work-life balance</li>
+                        </ul>
+
+                        <h4 class="sidebar-title mt-4">Tim Back End</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-users mr-2"></i> 8 Back End Developers</li>
+                            <li class="mb-2"><i class="fas fa-code-branch mr-2"></i> Agile Methodology</li>
+                            <li class="mb-2"><i class="fas fa-calendar-alt mr-2"></i> Tech Talk mingguan</li>
+                            <li class="mb-2"><i class="fas fa-laptop-code mr-2"></i> Code Review harian</li>
+                        </ul>
+
+                        <h4 class="sidebar-title mt-4">Kontak HRD</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-envelope mr-2"></i> hrd@tulungagungjaya.co.id</li>
+                            <li class="mb-2"><i class="fas fa-phone mr-2"></i> (0355) 1234567</li>
+                            <li class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Jl. Raya Tulungagung No.45, Jawa Timur</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Footer Content -->
+            <div class="footer_content">
+                <div class="row">
+                    <!-- Footer Column - About -->
+                    <div class="col-lg-3 footer_col">
+                        <!-- Logo -->
+                        <div class="logo_container">
+                            <div class="logo">
+                                <img src="images/logo.png" class="logo_img" alt="">
+                                <span>pmkm</span>
+                            </div>
+                        </div>
+                        <p class="footer_about_text">
+                            Universitas Bhinneka PGRI adalah perguruan tinggi swasta di bawah naungan PGRI yang fokus pada pendidikan berkualitas, nilai kebhinnekaan, dan pengembangan sumber daya manusia unggul.
+                        </p>
+                    </div>
+
+                    <!-- Footer Column - Menu -->
+                    <div class="col-lg-3 footer_col">
+                        <div class="footer_column_title">Menu</div>
+                        <div class="footer_column_content">
+                            <ul>
+                                <li class="footer_list_item"><a href="index.html">Home</a></li>
+                                <li class="footer_list_item"><a href="#">Magang</a></li>
+                                <li class="footer_list_item"><a href="karir.html">Karir</a></li>
+                                <li class="footer_list_item"><a href="daftar.html">Daftar</a></li>
+                                <li class="footer_list_item"><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Footer Column - Contact -->
+                    <div class="col-lg-3 footer_col">
+                        <div class="footer_column_title">Contact</div>
+                        <div class="footer_column_content">
+                            <ul>
+                                <li class="footer_contact_item">
+                                    <div class="footer_contact_icon">
+                                        <img src="images/placeholder.svg" alt="https://www.flaticon.com/authors/lucy-g">
+                                    </div>
+                                    Jl. Mayor Sujadi No.7, Manggisan, Plosokandang, Kec. Kedungwaru, Kabupaten Tulungagung, Jawa Timur 66229
+                                </li>
+                                <li class="footer_contact_item">
+                                    <div class="footer_contact_icon">
+                                        <img src="images/smartphone.svg" alt="https://www.flaticon.com/authors/lucy-g">
+                                    </div>
+                                    085213987107
+                                </li>
+                                <li class="footer_contact_item">
+                                    <div class="footer_contact_icon">
+                                        <img src="images/envelope.svg" alt="https://www.flaticon.com/authors/lucy-g">
+                                    </div>aziznurrohman75@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Copyright -->
+            <div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
+                <div class="footer_copyright">
+                    <span>
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+                    </span>
+                </div>
+                <div class="footer_social ml-sm-auto">
+                    <ul class="menu_social">
+                        <li class="menu_social_item"><a href="https://id.pinterest.com/"><i class="fab fa-pinterest"></i></a></li>
+                        <li class="menu_social_item"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="menu_social_item"><a href="https://www.instagram.com/ubhi_official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a></li>
+                        <li class="menu_social_item"><a href="https://www.facebook.com/profile.php?id=100072165706641"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="menu_social_item"><a href="https://x.com/home"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/courses_custom.js"></script>
+
+</body>
+</html>

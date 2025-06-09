@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Detail - Karir</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Lowongan Fullstack Developer PT. Reog Kendang">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+    <link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="styles/courses_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/courses_responsive.css">
+    <style>
+        .fullstack-header {
+            background: linear-gradient(135deg, #2d3e50 0%, #3498db 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px 10px 0 0;
+        }
+        .job-body {
+            padding: 30px;
+            border: 1px solid #e9ecef;
+            border-top: none;
+            border-radius: 0 0 10px 10px;
+        }
+        .job-title {
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        .company-name {
+            font-weight: 300;
+            font-size: 1.5rem;
+        }
+        .job-meta {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        .meta-item {
+            margin-bottom: 10px;
+        }
+        .section-title {
+            color: #2d3e50;
+            font-weight: 600;
+            margin: 30px 0 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        .section-title:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px;
+            height: 3px;
+            background-color: #3498db;
+        }
+        .responsibility-item, .requirement-item {
+            margin-bottom: 12px;
+            padding-left: 30px;
+            position: relative;
+            line-height: 1.6;
+        }
+        .responsibility-item:before, .requirement-item:before {
+            content: "\f058";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            color: #3498db;
+            position: absolute;
+            left: 0;
+            font-size: 1.1rem;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+        .tech-item {
+            background-color: #e3f2fd;
+            color: #1976d2;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+        }
+        .tech-icon {
+            margin-right: 8px;
+            font-size: 1rem;
+        }
+        .apply-btn {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 35px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            border: none;
+            border-radius: 30px;
+            transition: all 0.3s;
+        }
+        .apply-btn:hover {
+            background-color: #1976d2;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .job-sidebar {
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            height: 100%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .sidebar-title {
+            color: #2d3e50;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        .company-logo {
+            max-width: 180px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 50px;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 25px;
+        }
+        .timeline-icon {
+            position: absolute;
+            left: -50px;
+            top: 0;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            background-color: #3498db;
+            color: white;
+        }
+        .timeline-content {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 3px solid #3498db;
+        }
+        .benefit-card {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+
+<div class="super_container">
+
+    <!-- Header -->
+    <header class="header d-flex flex-row">
+        <div class="header_content d-flex flex-row align-items-center">
+            <!-- Logo -->
+            <div class="logo_container">
+                <div class="logo">
+                    <img src="images/logo.png" class="logo_img" alt="">
+                    <span>PMKM</span>
+                </div>
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="main_nav_container">
+                <div class="main_nav">
+                    <ul class="main_nav_list">
+                        <li class="main_nav_item"><a href="index.html">home</a></li>
+                        <li class="main_nav_item"><a href="magang.html">magang</a></li>
+                        <li class="main_nav_item"><a href="karir.html">karir</a></li>
+                        <li class="main_nav_item"><a href="daftar.html">Daftar</a></li>
+                        <li class="main_nav_item"><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="header_side d-flex flex-row justify-content-center align-items-center">
+            <img src="images/phone-call.svg" alt="">
+            <span>+62 8521 3687 107</span>
+        </div>
+
+        <!-- Hamburger -->
+        <div class="hamburger_container">
+            <i class="fas fa-bars trans_200"></i>
+        </div>
+    </header>
+    
+    <!-- Menu -->
+    <div class="menu_container menu_mm">
+        <!-- Menu Close Button -->
+        <div class="menu_close_container">
+            <div class="menu_close"></div>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="menu_inner menu_mm">
+            <div class="menu menu_mm">
+                <ul class="menu_list menu_mm">
+                    <li class="menu_item menu_mm"><a href="index.html">Home</a></li>
+                    <li class="menu_item menu_mm"><a href="magang.html">Magang</a></li>
+                    <li class="menu_item menu_mm"><a href="karir.html">Karir</a></li>
+                    <li class="menu_item menu_mm"><a href="daftar.html">Dafar</a></li>
+                    <li class="menu_item menu_mm"><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <!-- Menu Social -->
+                <div class="menu_social_container menu_mm">
+                    <ul class="menu_social menu_mm">
+                        <li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                        <li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="menu_copyright menu_mm">Colorlib All rights reserved</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Home -->
+    <div class="home">
+        <div class="home_background_container prlx_parent">
+            <div class="home_background prlx" style="background-image:url(images/courses_background.jpg)"></div>
+        </div>
+        <div class="home_content">
+            <h1>Fullstack Developer</h1>
+        </div>
+    </div>
+
+    <!-- Job Details -->
+    <div class="popular page_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section_title text-center">
+                        <h1>Lowongan Kerja</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="job-card mb-5">
+                        <div class="fullstack-header">
+                            <h1 class="job-title">Fullstack Developer</h1>
+                            <h3 class="company-name">PT. Reog Kendang, Ponorogo</h3>
+                        </div>
+                        <div class="job-body">
+                            <div class="job-meta">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="meta-item">
+                                            <strong><i class="fas fa-briefcase mr-2"></i>Jenis:</strong> Full-time
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="meta-item">
+                                            <strong><i class="fas fa-map-marker-alt mr-2"></i>Lokasi:</strong> Hybrid (Ponorogo & Remote)
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="meta-item">
+                                            <strong><i class="fas fa-money-bill-wave mr-2"></i>Gaji:</strong> Rp10-18 juta
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-4">
+                                        <div class="meta-item">
+                                            <strong><i class="fas fa-clock mr-2"></i>Pengalaman:</strong> Min. 3 tahun
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="meta-item">
+                                            <strong><i class="fas fa-graduation-cap mr-2"></i>Pendidikan:</strong> S1/D4 Teknik Informatika
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="meta-item">
+                                            <strong><i class="fas fa-calendar-alt mr-2"></i>Posting:</strong> 25 Juni 2024
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="section-title">Deskripsi Pekerjaan</h3>
+                            <p>Kami mencari Fullstack Developer berpengalaman untuk memimpin pengembangan produk digital PT. Reog Kendang. Anda akan bertanggung jawab atas seluruh siklus pengembangan aplikasi, mulai dari konsep hingga deployment, untuk platform manajemen event budaya terbesar di Jawa Timur.</p>
+
+                            <h3 class="section-title">Tanggung Jawab</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Frontend Development:</h5>
+                                    <ul class="list-unstyled">
+                                        <li class="responsibility-item">Membangun antarmuka pengguna dengan React.js/Next.js</li>
+                                        <li class="responsibility-item">Mengimplementasikan desain responsif dan interaktif</li>
+                                        <li class="responsibility-item">Optimasi performa frontend</li>
+                                        <li class="responsibility-item">State management dengan Redux/Context API</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Backend Development:</h5>
+                                    <ul class="list-unstyled">
+                                        <li class="responsibility-item">Mengembangkan RESTful API dengan Node.js</li>
+                                        <li class="responsibility-item">Mendesain dan mengoptimalkan database</li>
+                                        <li class="responsibility-item">Menerapkan autentikasi dan otorisasi</li>
+                                        <li class="responsibility-item">Integrasi dengan layanan pihak ketiga</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h3 class="section-title">Tech Stack</h3>
+                            <div class="tech-stack">
+                                <div class="tech-item">
+                                    <i class="fab fa-react tech-icon"></i> React.js/Next.js
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-node-js tech-icon"></i> Node.js
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fas fa-database tech-icon"></i> MongoDB
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-aws tech-icon"></i> AWS
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-docker tech-icon"></i> Docker
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fas fa-code-branch tech-icon"></i> GraphQL
+                                </div>
+                            </div>
+
+                            <h3 class="section-title">Kualifikasi</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Wajib:</h5>
+                                    <ul class="list-unstyled">
+                                        <li class="requirement-item">Pengalaman 3+ tahun sebagai Fullstack Developer</li>
+                                        <li class="requirement-item">Mahir dalam JavaScript/TypeScript</li>
+                                        <li class="requirement-item">Pengalaman dengan React dan Node.js</li>
+                                        <li class="requirement-item">Memahami konsep database SQL/NoSQL</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Dianjurkan:</h5>
+                                    <ul class="list-unstyled">
+                                        <li class="requirement-item">Pengalaman dengan cloud platform (AWS/GCP)</li>
+                                        <li class="requirement-item">Pengetahuan tentang microservices</li>
+                                        <li class="requirement-item">Familiar dengan CI/CD pipelines</li>
+                                        <li class="requirement-item">Pengalaman dengan testing framework</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h3 class="section-title">Benefit</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="benefit-card">
+                                        <h5><i class="fas fa-coins text-success mr-2"></i> Kompensasi</h5>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">Gaji kompetitif + bonus proyek</li>
+                                            <li class="mb-2">THR dan bonus tahunan</li>
+                                            <li class="mb-2">Program profit sharing</li>
+                                        </ul>
+                                    </div>
+                                    <div class="benefit-card">
+                                        <h5><i class="fas fa-heart text-success mr-2"></i> Kesehatan</h5>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">Asuransi kesehatan keluarga</li>
+                                            <li class="mb-2">Medical check-up tahunan</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="benefit-card">
+                                        <h5><i class="fas fa-user-graduate text-success mr-2"></i> Pengembangan</h5>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">Pelatihan teknologi terbaru</li>
+                                            <li class="mb-2">Konferensi dan workshop</li>
+                                            <li class="mb-2">Mentoring dengan senior</li>
+                                        </ul>
+                                    </div>
+                                    <div class="benefit-card">
+                                        <h5><i class="fas fa-umbrella-beach text-success mr-2"></i> Lainnya</h5>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">Fleksibilitas kerja remote</li>
+                                            <li class="mb-2">Liburan perusahaan</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="section-title">Proses Rekrutmen</h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        1
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h5>Seleksi Administrasi</h5>
+                                        <p>Review CV dan portofolio proyek</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        2
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h5>Technical Test</h5>
+                                        <p>Fullstack coding challenge (4 jam)</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        3
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h5>Technical Interview</h5>
+                                        <p>Diskusi teknis dengan tim engineering</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        4
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h5>Culture Fit Interview</h5>
+                                        <p>Wawancara dengan manajemen</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-center mt-5">
+                                <a href="daftar.html" class="btn apply-btn">LAMAR SEKARANG</a>
+                                <p class="mt-3">Batas akhir lamaran: 15 Juli 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="job-sidebar">
+                        <div class="text-center">
+                            <img src="images/logo.png" alt="PT. Reog Kendang" class="company-logo">
+                        </div>
+                        <h4 class="sidebar-title">Tentang Perusahaan</h4>
+                        <p>PT. Reog Kendang adalah perusahaan teknologi yang berfokus pada digitalisasi budaya dan event tradisional. Kami mengembangkan platform manajemen event budaya terintegrasi pertama di Indonesia, menghubungkan komunitas seni dengan audiens global.</p>
+                        
+                        <h4 class="sidebar-title mt-4">Tim Teknologi</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-users mr-2"></i> 12 Fullstack Developers</li>
+                            <li class="mb-2"><i class="fas fa-code-branch mr-2"></i> Agile Scrum Team</li>
+                            <li class="mb-2"><i class="fas fa-calendar-alt mr-2"></i> Sprint 2 mingguan</li>
+                            <li class="mb-2"><i class="fas fa-laptop-code mr-2"></i> Tech Stack Modern</li>
+                        </ul>
+
+                        <h4 class="sidebar-title mt-4">Kultur Perusahaan</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> Inovasi dan kreativitas</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> Kolaborasi lintas tim</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> Pembelajaran berkelanjutan</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> Work-life balance</li>
+                        </ul>
+
+                        <h4 class="sidebar-title mt-4">Kontak HRD</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-envelope mr-2"></i> recruitment@reogkendang.co.id</li>
+                            <li class="mb-2"><i class="fas fa-phone mr-2"></i> (0352) 1234567</li>
+                            <li class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Jl. Diponegoro No.10, Ponorogo</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Footer Content -->
+            <div class="footer_content">
+                <div class="row">
+                    <!-- Footer Column - About -->
+                    <div class="col-lg-3 footer_col">
+                        <!-- Logo -->
+                        <div class="logo_container">
+                            <div class="logo">
+                                <img src="images/logo.png" class="logo_img" alt="">
+                                <span>pmkm</span>
+                            </div>
+                        </div>
+                        <p class="footer_about_text">
+                            Universitas Bhinneka PGRI adalah perguruan tinggi swasta di bawah naungan PGRI yang fokus pada pendidikan berkualitas, nilai kebhinnekaan, dan pengembangan sumber daya manusia unggul.
+                        </p>
+                    </div>
+
+                    <!-- Footer Column - Menu -->
+                    <div class="col-lg-3 footer_col">
+                        <div class="footer_column_title">Menu</div>
+                        <div class="footer_column_content">
+                            <ul>
+                                <li class="footer_list_item"><a href="index.html">Home</a></li>
+                                <li class="footer_list_item"><a href="#">Magang</a></li>
+                                <li class="footer_list_item"><a href="karir.html">Karir</a></li>
+                                <li class="footer_list_item"><a href="daftar.html">Daftar</a></li>
+                                <li class="footer_list_item"><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Footer Column - Contact -->
+                    <div class="col-lg-3 footer_col">
+                        <div class="footer_column_title">Contact</div>
+                        <div class="footer_column_content">
+                            <ul>
+                                <li class="footer_contact_item">
+                                    <div class="footer_contact_icon">
+                                        <img src="images/placeholder.svg" alt="https://www.flaticon.com/authors/lucy-g">
+                                    </div>
+                                    Jl. Mayor Sujadi No.7, Manggisan, Plosokandang, Kec. Kedungwaru, Kabupaten Tulungagung, Jawa Timur 66229
+                                </li>
+                                <li class="footer_contact_item">
+                                    <div class="footer_contact_icon">
+                                        <img src="images/smartphone.svg" alt="https://www.flaticon.com/authors/lucy-g">
+                                    </div>
+                                    085213987107
+                                </li>
+                                <li class="footer_contact_item">
+                                    <div class="footer_contact_icon">
+                                        <img src="images/envelope.svg" alt="https://www.flaticon.com/authors/lucy-g">
+                                    </div>aziznurrohman75@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Copyright -->
+            <div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
+                <div class="footer_copyright">
+                    <span>
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+                    </span>
+                </div>
+                <div class="footer_social ml-sm-auto">
+                    <ul class="menu_social">
+                        <li class="menu_social_item"><a href="https://id.pinterest.com/"><i class="fab fa-pinterest"></i></a></li>
+                        <li class="menu_social_item"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="menu_social_item"><a href="https://www.instagram.com/ubhi_official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a></li>
+                        <li class="menu_social_item"><a href="https://www.facebook.com/profile.php?id=100072165706641"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="menu_social_item"><a href="https://x.com/home"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/courses_custom.js"></script>
+
+</body>
+</html>
